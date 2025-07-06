@@ -4,7 +4,6 @@ This repository contains the code for a simple Android application that displays
 
 **Credits:** This project is based on the "Superheroes" practice project from the [Android Basics with Compose course](https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-superheroes). Full credit goes to the Android Developers team for providing this excellent learning resource.
 
----
 
 ## Features
 
@@ -12,7 +11,6 @@ This repository contains the code for a simple Android application that displays
 * Uses Jetpack Compose for the UI.
 * Animations: Smooth animations for the superhero list items, enhancing user experience.
 
----
 
 ## What You'll Learn
 
@@ -35,15 +33,12 @@ By exploring this project and comparing my independent solution with the officia
     * The value of attempting a solution independently to solidify understanding.
     * Learning to refine and improve code by comparing it with well-structured, official solutions.
 
----
-
 ## Technologies Used
 
 * Kotlin
 * Jetpack Compose
 * Android Studio
 
----
 
 ## How to Run the App
 
@@ -57,7 +52,6 @@ By exploring this project and comparing my independent solution with the officia
     Select a target device or emulator and run the app.
 
 
----
 
 ## Learning Journey
 
@@ -65,8 +59,6 @@ This project represents my independent attempt to solve the "Superheroes" practi
 
 **Official Solution Code:** You can find the official solution code for comparison and learning here: [https://github.com/google-developer-training/basic-android-kotlin-compose-training-superheroes](https://github.com/google-developer-training/basic-android-kotlin-compose-training-superheroes)
 
----
 
 ## Author
-
 aaimran236

@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -29,7 +28,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             SuperheroesTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize(),
+                    ///using the background color from the theme
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     SuperheroesApp()
                 }
@@ -38,15 +39,18 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+/**
+ Compose display top App bar and super hero list
+ **/
 @Composable
 fun SuperheroesApp() {
     Scaffold(
+        modifier = Modifier.fillMaxSize(),
         topBar = {
             HeroesTopAppBar()
         }
-    ) { it->
-        HeroesList(HeroesRepository.heroes
-        ,it)
+    ) { it ->
+        HeroesList(heroes = HeroesRepository.heroes, contentPadding = it)
     }
 }
 
@@ -69,4 +73,12 @@ fun HeroesTopAppBar(
         },
         modifier=modifier
     )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun SuperHeroPreview(){
+    SuperheroesTheme {
+        SuperheroesApp()
+    }
 }
